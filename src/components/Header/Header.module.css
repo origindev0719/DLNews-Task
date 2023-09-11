@@ -1,0 +1,98 @@
+.container {
+  padding: 16px 40px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; 
+  background-color: #F27C08;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+.title {
+  margin-right: 30px;
+  width: 10%;
+}
+
+.search {
+  position: relative;
+  width: 20%;
+}
+
+.inputContainer {
+  position: relative;
+  width: 100%;
+}
+
+.inputContainer svg {
+  color: #F27C08;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.search input {
+  padding: 13px 30px 13px 16px;
+  width: 100%;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  color: #565454;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.menuButton {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .search {
+    width: 30%;
+  }
+
+  .inputContainer {
+    width: 100%;
+  }
+
+  .search input {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 12px 30px;
+    font-size: 24px;
+  }
+
+  .search {
+    width: 50%;
+  }
+
+  .inputContainer {
+    width: 100%;
+  }
+
+  .search input {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 680px) {
+  .menuButton {
+    display: block;
+    cursor: pointer;
+  }
+  
+}
